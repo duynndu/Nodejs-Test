@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.render('home');
   console.log(req.query);
 });
-        app.get('/news', (req, res) => {
+      app.get('/news', (req, res) => {
   res.render('news');
   console.log('body' + req.body);
 });
