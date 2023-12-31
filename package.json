@@ -9,8 +9,11 @@
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --write --single-quote --trailing-comma all"
+  },
   "hooks": {
-    "pre-commit": "npm run prettier",
+    "pre-commit": "lint-staged",
     "pre-add": "npm run prettier"
   },
   "author": "",
