@@ -16,11 +16,11 @@ app.get('/', (req, res) => {
   console.log(req.body);
 });
 
-    app.post('/', (req, res) => {
+app.post('/', (req, res) => {
   res.render('home');
   console.log(req.query);
-    });
-  app.get('/news', (req, res) => {
+});
+app.get('/news', (req, res) => {
   res.render('news');
   console.log('body' + req.body);
 });
