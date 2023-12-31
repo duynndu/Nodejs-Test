@@ -12,8 +12,10 @@
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --write --single-quote --trailing-comma all"
   },
-  "hooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "author": "",
   "license": "ISC",
