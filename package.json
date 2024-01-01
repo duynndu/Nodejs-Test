@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run start"
+      "pre-commit": "lint-staged"
     }
   },
   "author": "",
